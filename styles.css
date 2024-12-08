@@ -11,16 +11,14 @@ body{
     padding:0;
     font-family: "Roboto", Arial, sans-serif;
 }
-*{
-    /* border:1px solid red; */
-}
 header{
     position:fixed;
     top:0;
     width:100%;
-    /* z-index:999;  */
-    /* background-color: #0f0f0f; */
+    z-index:100;
+    background-color: rgb(255, 255, 255);
 }
+
 nav{
     display:flex;
     align-items:center;
@@ -31,15 +29,15 @@ nav{
 }
 
 main{ 
-    /* position:absolute;
-    z-index:999; */
     margin-top:100px;
-    /* background-color: rgb(218, 169, 185); */
 }
 .left_nav{
     display:flex;
     align-items: center;
     gap:12px;
+}
+.left_nav:hover{
+    cursor: pointer;
 }
 .nav-logo img{
     width:30px;
@@ -60,17 +58,16 @@ ul{
 .nav_list{
     display:flex;
     padding-left:12px;
-    /* background-color: #00b39b; */
     gap:15px;
 }
 .nav_list a{
     text-decoration: none;
     color:var(--grey);
-    /* padding:2px; */
     font-size: 15px;
 }
 .nav_list a:hover, .nav_list a:visited{
     color:var(--green);
+    cursor: pointer;
 }
 .secionOne{
     width:73%;
@@ -79,15 +76,11 @@ ul{
     flex-direction:column;
     align-items:center;
 }
-/* .sectionOne_logo{
-    margin-bottom:10px;
-} */
 .sectionOne_title{
     font-family:"Work Sans", Arial, sans-serif;
     font-size: 34px;
     color:var(--green);
     font-weight:300;
-    /* line-height: 44.2px; */
 }
 .sectionOne_paraghraphs{
     display:flex;
@@ -102,7 +95,6 @@ ul{
     display:flex;
     justify-content: center;
     margin:40px auto;
-    /* gap:12px; */
 }
 .patient_card, .patient_select{
     background-color: #00ccb1;
@@ -124,21 +116,16 @@ ul{
     flex-direction:column;
     justify-content:space-between;
 }
-.card_logo{
-    
-}
 .cards_title{
     font-family:"Work Sans", Arial, sans-serif ;
     font-size:26px;
     line-height: 3.8px;
     font-weight:400;
-    /* margin-top: 0; */
 }
 .cards_paragraph{
     font-size:24px;
     line-height: 1.2;
     font-weight:300;
-
 }
 select{
     border:none;
@@ -154,19 +141,11 @@ option{
     line-height:normal;
     font-size: medium;
 }
-
-*{
-    /* border:1px solid red; */
-}
-
-
 .sectionThree{
     display:flex;
-    /* background-color: red; */
     justify-content:space-between;
     width:73%;
     margin:0 auto;
-    
 }
 .brands_description{
     font-size:26px;
@@ -192,14 +171,12 @@ option{
     gap:4px;
 }
 .column, .last_column{
-    /* background-color: greenyellow; */
     width:160px;
     display:flex;
     align-items:center;
 }
 .column h2{
     font-size:16px;
-
 }
 .sygnet_logo{
     width:20px;
@@ -226,8 +203,14 @@ option{
     width: 135px;
     height:29px;
 }
-:not(.logo:hover){
-    /* filter: grayscale(100%) brightness(45%); */
+/* logo filter */
+:not(.logos_column:hover){
+    .logo{
+        filter: grayscale(100%) brightness(100%); 
+    }
+    .column>h2{
+        color:grey;
+    }   
 }
 
 
@@ -321,6 +304,134 @@ option{
     color:#747474;
     line-height: 16.9px;
     margin-top:2px;
+}
+
+.sectionFive{
+    width:40%;
+    text-align: center;
+    margin:80px auto;
+    padding:0 40px;
+    box-sizing: border-box;
+}
+.sectionFive h1{
+    font-size:30px;
+    font-weight:300;
+    line-height:39px;
+    color:#00b39b;
+    
+}
+.sectionFive p{
+    font-size:14px;
+    line-height:24px;
+    color:#747474;
+}
+
+.sectionSix{
+    /* border:1px solid red; */
+    width:73%;
+    margin:0 auto;
+    display:flex;
+    gap:22px;
+    flex-direction:column;
+}
+.card-row{
+    display:flex;
+    gap:55px;
+}
+.card-column{
+    width:290px;
+    height:360px;
+    overflow: hidden;
+    /* padding-top:0; */
+    border:0.01px solid #e0dddd; /**/
+    border-radius:9px;
+}
+.card-column:hover{
+    box-shadow: 2px 2px 30px #cfc7c7;
+    cursor: pointer;
+    
+}
+
+.sectionSix img{
+    width:290px;
+    height:290px;
+}
+.card-description{
+    display:flex;
+    justify-content: space-between;
+    padding:5px 20px;
+}
+.card-description p{
+    font-size:16px;
+    line-height:20.8px;
+    color:#747474;
+}
+.card-description button{
+    background-color:#3d83df;
+    color:white;
+    font-size:10px;
+    font-weight:600;
+    text-align:center;
+    line-height: 10px;
+    letter-spacing: 0.4px;
+    border:none;
+    border-radius: 4px;
+    width:103px;
+    height:30px;
+    padding:4px;
+    margin:auto 0;
+    
+}
+
+.card-description button:hover{
+    background-color: #1662c6;
+}
+
+
+.sectionSeven{
+    text-align: center;
+    margin:80px;
+}
+.sectionSeven h3{
+    font-family:"Work Sans", Arial, sans-serif;
+    font-size:30px;
+    font-weight: 300;
+    line-height:39px;
+    letter-spacing: -0.3px;
+    color:#333333;
+    margin-bottom:23px;
+}
+.sectionSeven button{
+    font-size:12px;
+    font-weight:600;
+    background-color:#3d83df;
+    color:white;
+    text-transform: uppercase;
+    border:none;
+    border-radius:4px;
+    width:210px;
+    height:40px;
+}
+
+footer{
+    border-top:0.01px solid #e0dddd;
+    color:#ababab;
+    padding: 17px 0 10px 0;
+    text-align: center;
+    font-size:12px;
+    
+}
+footer > p{
+    /* border:1px solid red; */
+    padding-top:10px;
+    
+}
+footer a{
+    color:#3d83df;
+}
+footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
