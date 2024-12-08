@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --green:#00b39b;
+    --light_blue:#e5faf8;
+    --grey:#ababab;
+    --dark_grey:#747474;   
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+*{
+    /* border:1px solid red; */
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    /* z-index:999;  */
+    /* background-color: #0f0f0f; */
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:73%;
+    margin:0 auto;
+    padding:0;
+}
+
+main{ 
+    /* position:absolute;
+    z-index:999; */
+    margin-top:100px;
+    /* background-color: rgb(218, 169, 185); */
+}
+.left_nav{
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+.nav-logo img{
+    width:30px;
+    height:30px;
+    margin-top:3px;
+}
+.nav_title{
+    font-size:25px;
+    color: var(--grey);
+}
+.nav_doc{
+    color:var(--green);
+}
+
+ul{
+    list-style: none;
+}
+.nav_list{
+    display:flex;
+    padding-left:12px;
+    /* background-color: #00b39b; */
+    gap:15px;
+}
+.nav_list a{
+    text-decoration: none;
+    color:var(--grey);
+    /* padding:2px; */
+    font-size: 15px;
+}
+.nav_list a:hover, .nav_list a:visited{
+    color:var(--green);
+}
+.secionOne{
+    width:73%;
+    margin:30px auto 0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* .sectionOne_logo{
+    margin-bottom:10px;
+} */
+.sectionOne_title{
+    font-family:"Work Sans", Arial, sans-serif;
+    font-size: 34px;
+    color:var(--green);
+    font-weight:300;
+    /* line-height: 44.2px; */
+}
+.sectionOne_paraghraphs{
+    display:flex;
+    line-height: 28px;
+    gap:22px;
+    font-size:16px;
+    color:var(--dark_grey);
+    padding:20px 0;
+}
+.sectionTwo{
+    width: 73%;
+    display:flex;
+    justify-content: center;
+    margin:40px auto;
+    /* gap:12px; */
+}
+.patient_card, .patient_select{
+    background-color: #00ccb1;
+}
+.doctor_card, .doctor_select{
+    background-color:#3d83df ;
+}
+.clinics_card, .clinics_select{
+    background-color: #1b2734;
+}
+.cards{
+    margin: 10px;
+    width:30%;
+    padding:32px;
+    color:white;
+    height:280px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.card_logo{
+    
+}
+.cards_title{
+    font-family:"Work Sans", Arial, sans-serif ;
+    font-size:26px;
+    line-height: 3.8px;
+    font-weight:400;
+    /* margin-top: 0; */
+}
+.cards_paragraph{
+    font-size:24px;
+    line-height: 1.2;
+    font-weight:300;
+
+}
+select{
+    border:none;
+    color:white;
+    text-decoration: underline;
+    font-size: 19.2px;
+    line-height: 24.96px;
+    padding:8px 0;
+}
+option{
+    background-color: white;
+    color:black;
+    line-height:normal;
+    font-size: medium;
+}
+
+*{
+    /* border:1px solid red; */
+}
+
+
+.sectionThree{
+    display:flex;
+    /* background-color: red; */
+    justify-content:space-between;
+    width:73%;
+    margin:0 auto;
+    
+}
+.brands_description{
+    font-size:26px;
+    width:200px;
+    line-height:33.8px;
+    font-weight:300;
+    color:var(--green);
+}
+
+.logos_list{
+    display:flex;
+    flex-direction: column;
+}
+.logos_row{
+    display: flex;
+}
+.last_column{
+    gap:20px;
+    box-sizing: border-box;
+    padding:14px; 
+}
+.column{
+    gap:4px;
+}
+.column, .last_column{
+    /* background-color: greenyellow; */
+    width:160px;
+    display:flex;
+    align-items:center;
+}
+.column h2{
+    font-size:16px;
+
+}
+.sygnet_logo{
+    width:20px;
+    height:20px; 
+    /* filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%); */ 
+}
+.logo-tuotempo{
+    width:127px;
+    height:31px;
+}
+.logo-gipo{
+    width:42px;
+    height:49px;
+}
+.logo-clinicloud{
+    width:72px;
+    height:49px;
+}
+.logo-feegow{
+    width:100px;
+    height:43px;
+}
+.my_dream_logo{
+    width: 135px;
+    height:29px;
+}
+:not(.logo:hover){
+    /* filter: grayscale(100%) brightness(45%); */
+}
+
+
+.sectionFour{
+    /* border:1px solid black; */
+    background-color:var(--light_blue);
+    /* background-image: linear-gradient(-45deg, rgba(0, 204, 177, .01) 5%, rgba(61, 199, 223, .1)); */
+    padding:40px;
+    margin-top:50px;
+    overflow: hidden;
+}
+.healthcare_div{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    /* gap:30px; */
+    margin:0 auto;
+    width:75%;
+}
+.healthcare_rightDiv{
+    display:flex;
+    flex-direction:column;
+}
+.healthcare_description{
+    width:400px;
+}
+.healthcare_rightDiv h1{
+    font-family:"Work Sans", Arial, sans-serif;
+    font-size:34px;
+    line-height: 44.2px;
+    letter-spacing: -0.3px;
+    color:#00b39b;  
+    font-weight: 300;
+}
+.healthcare_rightDiv p{
+    font-size:14px;
+    line-height: 24px;
+    color:#747474;    
+}
+.healthcare_rightDiv img{
+    width:400px;
+    height:400px;
+    position:relative;
+    top:150px;
+    right:150px;
+}
+.statistics{
+    padding-top:20px;
+    display:flex;
+    gap:20px;
+}
+.statistics > div{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.right_stats{
+    position:relative;
+    bottom:40px;
+}
+.stat-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:15px;
+    width:228px;
+    height:250px;
+    background-color:white ;
+    box-shadow:rgba(0, 0, 0, 0.05) 0px 1px 4px 0px;
+    border-radius:5px;
+}
+.stat-item div{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content:center;
+    text-align: center;
+
+}
+.stat-item h2{
+    font-family:"Work Sans", Arial, sans-serif;
+    font-size:24px;
+    line-height: 31.2px;
+    color:#00b39b;
+    font-weight:300;
+}
+.stat-item p{
+    font-size:13px;
+    color:#747474;
+    line-height: 16.9px;
+    margin-top:2px;
+}
+
+
